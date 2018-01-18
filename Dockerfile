@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y postgresql-client unzip xmlstarlet && \
     rm -rf /var/lib/apt/lists/* && \
     unzip /tmp/jasperserver.zip -d /usr/src/ && \
     mv /usr/src/jasperreports-server-* /usr/src/jasperreports-server && \
+    mv /usr/src/jasperreports-server/jasperserver.war /usr/src/jasperreports-server/jasperserver-pro.war && \
     mkdir -p /usr/local/share/jasperreports-pro/license && \
     rm -rf /tmp/*
 
